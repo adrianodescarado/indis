@@ -273,4 +273,429 @@
     border-radius: 4px;
     padding: 20px;
   }
-  .module…
+  .module-num {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--gold-dark);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .module-title { font-size: 15px; font-weight: 600; margin-bottom: 6px; color: var(--black); }
+  .module-desc { font-size: 13px; color: #666; line-height: 1.6; margin: 0; }
+
+  /* ── OBJECTIONS ── */
+  .objection-card {
+    background: #faf8f3;
+    border-left: 3px solid transparent;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    border-radius: 0 4px 4px 0;
+    transition: border-color 0.2s;
+  }
+  .objection-card:hover { border-left-color: var(--gold); }
+  .objection-q {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+    font-style: italic;
+  }
+  .objection-a { font-size: 15px; color: var(--black); line-height: 1.7; margin: 0; }
+
+  /* ── TESTIMONIALS ── */
+  .testi-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 24px;
+  }
+  .testi-card {
+    background: var(--dark2);
+    border: 1px solid rgba(200,168,75,0.15);
+    border-radius: 4px;
+    padding: 20px;
+  }
+  .testi-stars { color: var(--gold); font-size: 13px; margin-bottom: 10px; }
+  .testi-quote {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.7;
+    margin-bottom: 12px;
+    font-style: italic;
+  }
+  .testi-author { font-size: 12px; font-weight: 600; color: var(--gold); letter-spacing: 0.5px; }
+
+  /* ── PRICE BOX ── */
+  .price-section {
+    background: var(--black);
+    padding: 80px 24px;
+    text-align: center;
+  }
+  .price-inner { max-width: 500px; margin: 0 auto; }
+  .price-from {
+    font-size: 14px;
+    color: rgba(255,255,255,0.3);
+    text-decoration: line-through;
+    margin-bottom: 6px;
+  }
+  .price-amount {
+    font-family: 'Playfair Display', serif;
+    font-size: 72px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .price-amount sup { font-size: 28px; vertical-align: top; margin-top: 10px; }
+  .price-installment { font-size: 14px; color: rgba(255,255,255,0.4); margin-bottom: 36px; }
+  .price-section .btn-primary { font-size: 16px; padding: 18px 48px; margin-bottom: 14px; display: block; }
+  .price-security { font-size: 12px; color: rgba(255,255,255,0.3); }
+
+  /* ── BONUS ── */
+  .bonus-card {
+    background: #faf8f3;
+    border: 1px solid #e2ddd3;
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .bonus-tag {
+    background: var(--gold);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .bonus-title { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .bonus-desc { font-size: 13px; color: #666; line-height: 1.6; margin: 0; }
+
+  /* ── GUARANTEE ── */
+  .guarantee-box {
+    border: 2px solid var(--gold);
+    border-radius: 4px;
+    padding: 40px 32px;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .guarantee-icon { font-size: 48px; margin-bottom: 16px; display: block; }
+  .guarantee-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .guarantee-box p { font-size: 15px; color: #555; max-width: 400px; margin: 0 auto; }
+
+  /* ── URGENCY ── */
+  .urgency-bar {
+    background: #7b1212;
+    padding: 16px 24px;
+    text-align: center;
+  }
+  .urgency-bar p { color: var(--white); font-size: 14px; margin: 0; }
+  .urgency-bar strong { color: #ffd370; }
+
+  /* ── FINAL CTA ── */
+  .final-cta {
+    background: var(--dark);
+    padding: 80px 24px;
+    text-align: center;
+    color: var(--white);
+  }
+  .final-cta h2 { color: var(--white); margin-bottom: 16px; }
+  .final-cta p { color: rgba(255,255,255,0.55); font-size: 17px; max-width: 480px; margin: 0 auto 36px; }
+  .final-cta .btn-primary { font-size: 16px; padding: 18px 48px; margin-bottom: 12px; display: inline-block; }
+  .final-cta .note { font-size: 12px; color: rgba(255,255,255,0.25); }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--black);
+    padding: 28px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+  footer p { font-size: 12px; color: rgba(255,255,255,0.2); margin: 0; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid #e2ddd3;
+    margin: 0;
+  }
+  .divider-dark {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    margin: 0;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .book-presentation .inner { flex-direction: column; gap: 28px; }
+    .modules-grid, .testi-grid { grid-template-columns: 1fr; }
+    .price-amount { font-size: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">⚡ E-book exclusivo para homens</div>
+    <h1>
+      O Manual do<br>
+      <em>Homem Indisciplinado</em>
+    </h1>
+    <p class="hero-sub">
+      Como desenvolver foco de ferro e disciplina real — mesmo que você já tenha desistido mil vezes. Sem papo de coach. Sem promessa vazia. Só o que funciona.
+    </p>
+    <a href="#oferta" class="btn-primary">Quero o Manual Agora →</a>
+    <p class="hero-note">Acesso imediato após a confirmação do pagamento</p>
+  </div>
+</section>
+
+<!-- QUEBRA DE PADRÃO -->
+<section class="pattern-break">
+  <blockquote>
+    "Todo dia você acorda com uma promessa.<br>
+    Todo dia a promessa <strong>morre antes do almoço.</strong><br><br>
+    Isso não é falta de força de vontade.<br>
+    É falta do <strong>sistema certo.</strong>"
+  </blockquote>
+</section>
+
+<!-- DOR -->
+<section class="section-alt">
+  <div class="inner">
+    <h2>Você se reconhece nessa lista?</h2>
+    <ul class="pain-list">
+      <li>Começa a semana motivado e para tudo na quarta-feira</li>
+      <li>Tem objetivos claros na cabeça, mas nunca coloca em ação</li>
+      <li>Procrastina até o que realmente importa para você</li>
+      <li>Passa horas no celular e vai dormir com aquela sensação pesada de dia desperdiçado</li>
+      <li>Sabe que tem potencial, mas não consegue manter o ritmo por mais de 2 semanas</li>
+      <li>Já tentou planners, aplicativos, podcasts motivacionais — e nada grudou</li>
+    </ul>
+    <p style="margin-top:28px; font-size:17px;">
+      Se você marcou pelo menos 3 itens acima, <strong>este material foi escrito pensando exatamente em você.</strong>
+    </p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- STORYTELLING -->
+<section class="section-alt">
+  <div class="inner">
+    <h2>A história que a maioria dos homens não conta</h2>
+    <div class="story-block">
+      <p>Rafael tinha 32 anos, uma lista enorme de metas, uma agenda cheia de intenções — e zero resultados para mostrar.</p>
+      <p>Não era preguiçoso. Trabalhava. Tinha vontade. Mas todo ciclo de motivação durava no máximo 10 dias. Depois disso, voltava para o modo automático: celular, série, cama.</p>
+      <p>Um dia ele parou e se fez a pergunta honesta: <strong>"Sou eu que falho com os meus objetivos, ou nunca aprendi a forma certa de executar?"</strong></p>
+      <p>A resposta mudou tudo. Rafael não tinha problema de caráter. Ele tinha um problema de método. E quando ele encontrou o sistema certo, em 60 dias a vida dele era irreconhecível.</p>
+    </div>
+    <p>Esse é o tipo de virada que este e-book pode provocar em você.</p>
+  </div>
+</section>
+
+<!-- LIVRO -->
+<section class="book-presentation">
+  <div class="inner">
+    <div class="book-cover-wrap">
+      <div class="book-cover">
+        <div class="book-cover-icon">📖</div>
+        <div class="book-cover-title">Manual do Homem<br>Indisciplinado</div>
+      </div>
+    </div>
+    <div class="book-info">
+      <h2>Apresentando o Manual do <span class="gold">Homem Indisciplinado</span></h2>
+      <p>O e-book que transforma o homem que começa e para no homem que começa e conclui. Um sistema prático, direto e testado para desenvolver foco e disciplina de forma permanente — sem precisar ser perfeito para começar.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="section-alt">
+  <div class="inner">
+    <h2>O que muda na sua vida quando você aplica isso</h2>
+    <ul class="benefit-list">
+      <li>Você para de depender de motivação e começa a agir por hábito e sistema</li>
+      <li>Suas manhãs deixam de ser um campo de batalha e viram o momento mais produtivo do dia</li>
+      <li>Você termina o que começa — e essa sensação muda como você se vê</li>
+      <li>As pessoas ao seu redor percebem a mudança antes mesmo de você falar sobre ela</li>
+      <li>Você tem clareza de prioridade: sabe o que fazer e quando fazer, sem ansiedade</li>
+      <li>Você deixa de ser o homem que poderia ter feito mais e vira o homem que fez</li>
+    </ul>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- MÓDULOS -->
+<section class="section">
+  <h2>O que você vai aprender</h2>
+  <div class="modules-grid">
+    <div class="module-card">
+      <div class="module-num">Módulo 01</div>
+      <div class="module-title">A Raiz da Indisciplina</div>
+      <p class="module-desc">Por que força de vontade sozinha nunca foi suficiente — e o que realmente sustenta a ação consistente</p>
+    </div>
+    <div class="module-card">
+      <div class="module-num">Módulo 02</div>
+      <div class="module-title">O Sistema de Foco</div>
+      <p class="module-desc">Como estruturar seu dia para render 3x mais sem trabalhar mais horas</p>
+    </div>
+    <div class="module-card">
+      <div class="module-num">Módulo 03</div>
+      <div class="module-title">Quebrando o Ciclo</div>
+      <p class="module-desc">O método anti-procrastinação que funciona mesmo nos dias em que você não está com vontade</p>
+    </div>
+    <div class="module-card">
+      <div class="module-num">Módulo 04</div>
+      <div class="module-title">Identidade de Homem Disciplinado</div>
+      <p class="module-desc">Como reprogramar sua autoimagem para que a disciplina vire parte de quem você é</p>
+    </div>
+    <div class="module-card">
+      <div class="module-num">Módulo 05</div>
+      <div class="module-title">Rotina Blindada</div>
+      <p class="module-desc">Construindo uma rotina que resiste ao caos, às interrupções e aos dias ruins</p>
+    </div>
+    <div class="module-card">
+      <div class="module-num">Módulo 06</div>
+      <div class="module-title">Execução Sem Desculpa</div>
+      <p class="module-desc">O plano de 30 dias para sair da teoria e entrar em ação de forma irreversível</p>
+    </div>
+  </div>
+</section>
+
+<!-- OBJEÇÕES -->
+<section class="section-alt">
+  <div class="inner">
+    <h2>Respostas honestas para suas dúvidas</h2>
+    <div class="objection-card">
+      <div class="objection-q">"Já tentei de tudo e nunca funcionou pra mim..."</div>
+      <p class="objection-a">Você tentou com as ferramentas erradas. Motivação, força de vontade e apps de produtividade não foram feitos para o jeito que homens realmente funcionam. Este manual foi.</p>
+    </div>
+    <div class="objection-card">
+      <div class="objection-q">"Não tenho tempo para ler mais um e-book..."</div>
+      <p class="objection-a">O manual foi escrito para ser lido em partes, no seu ritmo. Cada capítulo tem uma ação imediata que você aplica no mesmo dia. Você não precisa de tempo extra — precisa usar melhor o que já tem.</p>
+    </div>
+    <div class="objection-card">
+      <div class="objection-q">"Sou muito indisciplinado, isso não vai funcionar pra mim..."</div>
+      <p class="objection-a">Esse e-book foi escrito exatamente para você. Não para quem já é disciplinado. O ponto de partida é a indisciplina — o método transforma isso em vantagem.</p>
+    </div>
+    <div class="objection-card">
+      <div class="objection-q">"É só mais um material motivacional?"</div>
+      <p class="objection-a">Não. Zero frases de parede, zero papo de coach. O manual é prático, direto e desconfortável do jeito certo. Ele vai fazer você se ver no espelho e agir.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section-dark">
+  <div class="inner">
+    <h2>O que os leitores estão dizendo</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Fui ler por curiosidade e não consegui parar. Em 3 dias mudei minha manhã completamente. Parece simples demais, mas funciona."</p>
+        <div class="testi-author">— Marcos T., 34 anos</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Finalmente algo que fala como homem pra homem. Sem enrolação. Já apliquei o método do módulo 3 e parei de procrastinar no trabalho."</p>
+        <div class="testi-author">— Diego R., 28 anos</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Comprei sem muita expectativa. Em 30 dias já tinha completado 2 metas que tinham 1 ano paradas. Valeu cada centavo."</p>
+        <div class="testi-author">— Rodrigo M., 41 anos</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"O capítulo sobre identidade me bateu forte. Entendi que eu não era preguiçoso — eu só nunca tinha aprendido o sistema."</p>
+        <div class="testi-author">— Felipe S., 26 anos</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA -->
+<section class="price-section" id="oferta">
+  <div class="price-inner">
+    <p class="price-from">De R$ 97,00</p>
+    <div class="price-amount"><sup>R$</sup>27</div>
+    <p class="price-installment">pagamento único · acesso vitalício</p>
+    <a href="#" class="btn-primary">Quero o Manual Agora →</a>
+    <p class="price-security">🔒 Pagamento seguro · Acesso imediato · Garantia de 7 dias</p>
+  </div>
+</section>
+
+<!-- BÔNUS -->
+<section class="section-alt">
+  <div class="inner">
+    <h2>Bônus incluídos neste acesso</h2>
+    <div class="bonus-card">
+      <div class="bonus-tag">BÔNUS 1</div>
+      <div>
+        <div class="bonus-title">Checklist da Rotina do Homem Focado</div>
+        <p class="bonus-desc">Um checklist diário com as 7 ações que os homens mais produtivos executam todo dia — para você implementar a partir de amanhã.</p>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-tag">BÔNUS 2</div>
+      <div>
+        <div class="bonus-title">Plano de 30 Dias de Disciplina</div>
+        <p class="bonus-desc">Um calendário prático com desafios progressivos para você construir o hábito da disciplina dia após dia, sem sobrecarregar.</p>
+      </div>
+    </div>
+    <div class="bonus-card">
+      <div class="bonus-tag">BÔNUS 3</div>
+      <div>
+        <div class="bonus-title">Guia de Foco em Tempos de Distração</div>
+        <p class="bonus-desc">Como proteger sua atenção do celular, das redes sociais e de tudo que sabota sua concentração — sem virar um monge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- GARANTIA -->
+<section class="section">
+  <div class="guarantee-box">
+    <span class="guarantee-icon">🛡</span>
+    <h3>Garantia incondicional de 7 dias</h3>
+    <p>Se por qualquer motivo você não gostar do material, basta enviar um e-mail em até 7 dias após a compra e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.</p>
+  </div>
+</section>
+
+<!-- URGÊNCIA -->
+<div class="urgency-bar">
+  <p>⚠ <strong>Oferta por tempo limitado:</strong> o preço de R$ 27 é válido somente até o final desta semana. Após isso, volta para R$ 97.</p>
+</div>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <h2>Você pode continuar como está.<br>Ou pode mudar hoje.</h2>
+  <p>Daqui a 30 dias você vai estar no mesmo lugar — ou vai ser um homem diferente. A escolha é sua. E ela custa R$ 27.</p>
+  <a href="#oferta" class="btn-primary">Quero Começar Agora →</a>
+  <p class="note">Acesso imediato · Garantia de 7 dias · Pagamento seguro</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Manual do Homem Indisciplinado · Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
